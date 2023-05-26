@@ -15,21 +15,45 @@ function getComputerChoice(){
 
 
 function playRps(playerOp, compOp){
-    if (playerOp === "rock" && compOp === "paper"){
+    playerOp = playerOp.toLowerCase();
+    compOp = compOp.toLowerCase();
+    if (playerOp == "rock" && compOp == "paper"){
         console.log(playerOp);
         console.log(compOp);
         console.log("lost");
     }
-    else if(playerOp === "rock" && compOp ==="scissors"){
+    else if(playerOp == "rock" && compOp == "scissors"){
         console.log(playerOp);
         console.log(compOp);
         console.log("Won!");
     }
+    else if(playerOp == "paper" && compOp == "scissors"){
+        console.log(playerOp);
+        console.log(compOp);
+        console.log("lost");
+    }
+    else if(playerOp == "paper" && compOp == "rock"){
+        console.log(playerOp);
+        console.log(compOp);
+        console.log("Won!");
+    }
+    else if(playerOp == "scissors" && compOp == "paper"){
+        console.log(playerOp);
+        console.log(compOp);
+        console.log("Won!");
+    }
+    else if(playerOp == "scissors" && compOp == "rock"){
+        console.log(playerOp);
+        console.log(compOp);
+        console.log("lost");
+    }
     else{
         console.log(playerOp);
         console.log(compOp);
-        console.log("It's a draw!");
+        console.log("Looks like a draw!!");
     }
+
+
 }
 
 
